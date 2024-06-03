@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .link {
+    @apply relative inline-block;
+  }
+  .link > a {
+    @apply relative z-10;
+  }
+  .link::after {
+    @apply absolute left-1/2 top-[80%] z-0 h-[10px] w-[90%] -translate-x-1/2 -translate-y-[50%] rounded-full duration-300 content-[''];
+  }
+  .link:hover::after {
+    @apply w-[100%];
+  }
+
+  .underline-soft-yellow::after {
+    @apply bg-yellow-100;
+  }
+  .underline-soft-yellow:hover::after {
+    @apply bg-softYellow;
+  }
+  .underline-soft-red::after {
+    @apply bg-red-200;
+  }
+  .underline-soft-red:hover::after {
+    @apply bg-softRed;
+  }
+}
