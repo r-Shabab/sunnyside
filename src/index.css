@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  .triangle {
+    @apply border-b-[30px] border-l-[25px] border-r-[0px] border-t-[10px] border-transparent border-b-white;
+  }
   .link {
     @apply relative inline-block;
   }

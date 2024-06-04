@@ -31,37 +31,36 @@ function Navbar() {
           id="navbar-default"
           className={`${isNavbarOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
         >
-          <ul
-            className={`${isNavbarOpen ? "block" : "hidden"}Nav-items flex flex-col items-center justify-center font-semibold md:flex-row md:space-x-8`}
-          >
-            <li>
+          <ul className="absolute z-[-1] mt-8 w-11/12 flex-col justify-center space-y-3 bg-white py-6 font-semibold md:static md:z-auto md:mt-0 md:flex md:w-full md:flex-row md:items-center md:space-x-8 md:space-y-0 md:bg-navBlue md:py-0">
+            <div className="triangle absolute -top-4 right-2 -translate-y-1/2 translate-x-1/3 md:hidden"></div>
+            <li className="text-center">
               <a
                 href="#"
-                className="block px-3 py-2 font-barlow text-white decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline"
+                className="block px-3 py-2 font-barlow text-gray-400 decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline md:text-white"
               >
                 About
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href="#"
-                className="block px-3 py-2 font-barlow text-white decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline"
+                className="block px-3 py-2 font-barlow text-gray-400 decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline md:text-white"
               >
                 Services
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href="#"
-                className="block px-3 py-2 font-barlow text-white decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline"
+                className="block px-3 py-2 font-barlow text-gray-400 decoration-2 underline-offset-4 hover:font-bold hover:text-gray-100 hover:underline md:text-white"
               >
                 Projects
               </a>
             </li>
-            <li>
+            <li className="text-center md:bg-transparent">
               <a
                 href="#"
-                className="hover:bg-navHoverBlue block rounded px-3 py-3 font-fraunces text-sm text-white transition hover:text-white hover:shadow-sm hover:duration-300 md:rounded-full md:bg-white md:px-5 md:text-black"
+                className="inline-block w-5/12 rounded-full bg-softYellow px-3 py-3 font-fraunces text-sm text-black transition hover:bg-navHoverBlue hover:text-white hover:shadow-sm hover:duration-300 md:block md:w-full md:rounded-full md:bg-white md:px-5"
               >
                 CONTACT
               </a>
